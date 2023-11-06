@@ -11,7 +11,7 @@ function GameMain()
 	canvas.height = window.screen.height;
 	const gl = canvas.getContext('webgl');
 	if (!gl) {
-		alert('Unable to initialize WebGL. Your browser or machine may not support it.');
+		console.log('Unable to initialize WebGL. Your browser or machine may not support it.');
 		return;
 	}
 
@@ -28,7 +28,7 @@ function GameMain()
 
 
 	//ui
-
+	renderer.render();
 
 
 
